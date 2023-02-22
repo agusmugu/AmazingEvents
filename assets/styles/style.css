@@ -7,7 +7,7 @@
 body{
     font-family: sans-serif;
     padding: 90px 20px 0px;
-    background-color: #f1efef;
+    background-color: rgb(238, 136, 179);
     letter-spacing: 0.03em;
     line-height: 1.6;
 }
@@ -20,6 +20,9 @@ header{
     top:0;
     left:0;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+
 
 .nav{
     display: flex;
@@ -64,6 +67,8 @@ header{
 
     display: none;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
 
 .cards{
     list-style: none;
@@ -113,12 +118,56 @@ header{
     text-decoration: none;
     color: #3498db;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.form-conteiner{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 5%;
+    width: 60%;
+    background-color: #d90368;    
+    border-radius: 10px;
+}
+.contact label{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    margin: 5px;
+}
+.contact input{
+    width: 100%;
+}
+.contact label:hover{
+    transition: 0.3s;
+    color: black;
+}
+.contact .submit{
+    font-weight: 800;
+    margin: 15px 0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    align-self: self-end;
+    color: #f1efef;
+    background-color: black;
+}
+.contact .submit:hover{
+    transition: 0.5s;
+    background-color: #f1efef;
+    color: black;
+}
 
 
 
 
-
-
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width:880px){
 
     body{
@@ -177,4 +226,3 @@ header{
         left: 0;
     }
 }
-
