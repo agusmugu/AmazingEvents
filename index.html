@@ -7,14 +7,16 @@
     <title>Home - Amazing Events</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/ead3863fa5.js" crossorigin="anonymous"></script>
-    <script defer src="/index.js"></script>
+    <script defer src="/scripts/nav.js"></script>
+    
 </head>
 
 <body>
   <header>
+    <!-- NAV -->
     <nav class="nav">
       <a href="#" class="nav-logo"><img src="./assets/img/logoamazingevents.png" alt="Logo" class="logo-img"></a>
-      <button class="nav-toggle" aria-label="open menu"><i class="fa-solid fa-bars"></i></button>
+      <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
       <ul class="nav-menu">
         <li class="nav-item"><a href="/upcoming_events.html" class="nav-link">Upcoming Events</a></li>
         <li class="nav-item"><a href="/past_events.html" class="nav-link">Past Events</a></li>
@@ -24,45 +26,10 @@
     </nav>
   </header>
 
-<ul class="cards">
-  <li class="card">
-    <img src="./assets/img/events/Cinema.jpg" alt="" class="card-img">
-    <h4>Cinema</h4>
-    <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-    <a href="#">See More...</a>
-  </li>
-  <li class="card">
-    <img src="./assets/img/events/Costume_Party.jpg" alt="" class="card-img">
-    <h4>Costume Party</h4>
-    <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-    <a href="#">See More...</a>
-  </li>
-  <li class="card">
-    <img src="./assets/img/events/Food_Fair.jpg" alt="" class="card-img">
-    <h4>Food Fair</h4>
-    <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-    <a href="#">See More...</a>
-  </li>
-  <li class="card">
-    <img src="./assets/img/events/Marathon.jpg" alt="" class="card-img">
-    <h4>Marathon</h4>
-    <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-    <a href="#">See More...</a>
-  </li>
-  <li class="card">
-    <img src="./assets//img/events/Museum_Tour.jpg" alt="" class="card-img">
-    <h4>Museum Tour</h4>
-    <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-    <a href="#">See More...</a>
-  </li>
-  <li class="card">
-    <img src="./assets/img/events/Music_Concert.jpg" alt="" class="card-img">
-    <h4>Music Concert</h4>
-    <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-    <a href="#">See More...</a>
-  </li>
-</ul>
+<div class="cards" id="card-conteiner">
+  <script>createTemplate()</script>
+</div>
 
 </body>
-
+<script src="./scripts/eventscards.js"></script>
 </html>
