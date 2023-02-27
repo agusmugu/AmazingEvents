@@ -7,7 +7,8 @@
     <title>Details - Amazing Events</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/ead3863fa5.js" crossorigin="anonymous"></script>
-    <script defer src="/scripts/index.js"></script>
+    <script defer src="/scripts/nav.js"></script>
+    <script defer src="/scripts/pasteventscards.js"></script>
 </head>
 
 <body>
@@ -24,44 +25,29 @@
     </nav>
   </header>
 
-  <ul class="cards">
-    <li class="card">
-      <img src="./assets/img/events/Cinema.jpg" alt="" class="card-img">
-      <h4>Cinema</h4>
-      <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-      <a href="#">See More...</a>
-    </li>
-    <li class="card">
-      <img src="./assets/img/events/Costume_Party.jpg" alt="" class="card-img">
-      <h4>Costume Party</h4>
-      <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-      <a href="#">See More...</a>
-    </li>
-    <li class="card">
-      <img src="./assets/img/events/Food_Fair.jpg" alt="" class="card-img">
-      <h4>Food Fair</h4>
-      <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-      <a href="#">See More...</a>
-    </li>
-    <li class="card">
-      <img src="./assets/img/events/Marathon.jpg" alt="" class="card-img">
-      <h4>Marathon</h4>
-      <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-      <a href="#">See More...</a>
-    </li>
-    <li class="card">
-      <img src="./assets//img/events/Museum_Tour.jpg" alt="" class="card-img">
-      <h4>Museum Tour</h4>
-      <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-      <a href="#">See More...</a>
-    </li>
-    <li class="card">
-      <img src="./assets/img/events/Music_Concert.jpg" alt="" class="card-img">
-      <h4>Music Concert</h4>
-      <p>texto descriptivo Lorem ipsum dolor sit amet.</p>
-      <a href="#">See More...</a>
-    </li>
-  </ul>
+  <div class="cards" id="card-conteiner">
+    <script>createTemplatePast()</script>
+  </div>
+
+
+  <footer class="footer-conteiner">
+    <div class="footer1">
+      <div class="footer-sociales">
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-whatsapp "></i>
+        </a>
+      </div>
+      <div class="footer-cohort">
+        <p>FE05-TN</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
