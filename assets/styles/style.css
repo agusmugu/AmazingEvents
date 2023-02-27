@@ -125,7 +125,7 @@ header{
 
 
 .form-conteiner{
-    display: fixed;
+    display: flex;
     justify-content: center;
 }
 
