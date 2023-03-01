@@ -11,7 +11,7 @@ let template=(foto,titulo,descripcion,precio)=>{
 </div>`
 }
 
-  function createTemplate(){
+function createTemplate(){
     let events=data.events
 
     let templates=[]
