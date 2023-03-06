@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/ead3863fa5.js" crossorigin="anonymous"></script>
     <script defer src="/scripts/nav.js"></script>
-    <script defer src="./scripts/eventscards.js"></script>
-    <script src="./scripts/eventlist.js"></script>
+    <script defer src="/scripts/cardTemplate.js"></script>
+    <script defer src="/scripts/eventscards.js"></script>
+    <script defer src="/scripts/searcher.js"></script>
+    <script src="/scripts/eventlist.js"></script>
     
 </head>
 
@@ -29,6 +31,36 @@
   </header>
 
 
+  
+  <div class="category-filter">
+    
+    <fieldset>
+      <label for="">Food Fair</label>
+      <input type="checkbox" name="" id="Food Fair">
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" name="" id="Museum">
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" name="" id="Costume Party">
+    </fieldset>  
+    <fieldset>
+      <input type="checkbox" name="" id="Music Concert">
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" name="" id="Race">
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" name="" id="Book Exchange">
+    </fieldset>
+    <fieldset>
+      <input type="checkbox" name="" id="Cinema">
+    </fieldset>
+    <fieldset>
+      <input type="text">
+    </fieldset>
+  </div>
+  
 
   <div class="cards" id="card-conteiner">
     createTemplate()
