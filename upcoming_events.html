@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Amazing Events</title>
+    <title>Upcoming Events - Amazing Events</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/ead3863fa5.js" crossorigin="anonymous"></script>
     <script defer src="/scripts/nav.js"></script>
     <script defer src="/scripts/cardTemplate.js"></script>
-    <script defer src="/scripts/eventscards.js"></script>
-    <script defer src="/scripts/searcher.js"></script>
-    <script defer src="/scripts/printcategories.js"></script>
-    <script src="/scripts/eventlist.js"></script>
-    
+    <script defer src="/scripts/upcomingeventscards.js"></script>
+    <script src="./scripts/eventlist.js"></script>
 </head>
 
 <body>
   <header>
-    <!-- NAV -->
     <nav class="nav">
-      <a href="#" class="nav-logo"><img src="./assets/img/logoamazingevents.png" alt="Logo" class="logo-img"></a>
-      <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+      <a href="/index.html" class="nav-logo"><img src="./assets/img/logoamazingevents.png" alt="Logo" class="logo-img"></a>
+      <button class="nav-toggle" aria-label="open menu"><i class="fa-solid fa-bars"></i></button>
       <ul class="nav-menu">
         <li class="nav-item"><a href="/upcoming_events.html" class="nav-link">Upcoming Events</a></li>
         <li class="nav-item"><a href="/past_events.html" class="nav-link">Past Events</a></li>
@@ -31,19 +27,11 @@
     </nav>
   </header>
 
-
-  <section class="">
-    <article class="" id="table_checks"></article>
-    <article class="" id="pet_container"></article>
-    <article class="" id="table_container"></article>
-</section>
-    
-
-
   <div class="cards" id="card-conteiner">
     createTemplate()
   </div>
 
+  
   <footer class="footer-conteiner">
     <div class="footer1">
       <div class="footer-sociales">
@@ -63,6 +51,5 @@
     </div>
   </footer>
 </body>
-
 
 </html>
