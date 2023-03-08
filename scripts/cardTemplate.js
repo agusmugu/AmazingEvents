@@ -6,7 +6,7 @@ let template=(foto,titulo,descripcion,precio)=>{
       <p>${descripcion}</p>
       <div class="card-foot">
         <p>price: $${precio}</p>
-        <a href="#">See More...</a>
+        <a href="./details.html?nombre=${titulo}">See More...</a>
       </div>
 </div>`
 }

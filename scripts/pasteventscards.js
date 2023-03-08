@@ -1,3 +1,5 @@
+  function createTemplate(){
+
     let events=data.events
 
     let templates=[]
