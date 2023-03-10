@@ -9,6 +9,3 @@ events.forEach(each => {
         categories.push(each.category)
     }
 })
-console.log(categories)
-
-console.log(events.filter(each => each.category === "Race"))
