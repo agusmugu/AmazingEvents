@@ -25,7 +25,7 @@ function printTemplates(id_etiqueta,detalle) {
 
 async function fetchApiStats(){
     try {
-        let urlApi = 'https://api-amazingevents.onrender.com/api/amazing-events'
+        let urlApi = 'https://mindhub-ab35.onrender.com/api/amazing-events'
         let fetchResponse = await (await fetch(urlApi))
         let response = await fetchResponse.json()
         array = response.events

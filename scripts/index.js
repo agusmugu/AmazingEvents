@@ -53,7 +53,7 @@ function notFound(id_etiqueta) {
 }
 
 async function captureData() {
-    const { currentDate, events } = await fetch('https://api-amazingevents.onrender.com/api/amazing-events').then((res) => res.json());
+    const { currentDate, events } = await fetch('https://mindhub-ab35.onrender.com/api/amazing-events').then((res) => res.json());
     array = events
     date = currentDate
     let texto = document.getElementById('id_search').value.toLowerCase()
@@ -87,7 +87,7 @@ async function captureData() {
 
 async function fetchApi() {
     try {
-        let urlApi = 'https://api-amazingevents.onrender.com/api/amazing-events'
+        let urlApi = 'https://mindhub-ab35.onrender.com/api/amazing-events'
         let fetchResponse = await (await fetch(urlApi))
         let response = await fetchResponse.json()
         createTemplate(response.events, response.currentDate)
