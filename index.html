@@ -4,62 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Amazing Events</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <script src="https://kit.fontawesome.com/ead3863fa5.js" crossorigin="anonymous"></script>
+    <title>Amazing Events | Home</title>
 </head>
-
 <body>
-  <header>
-    <!-- NAV -->
-    <nav class="nav">
-      <a href="#" class="nav-logo"><img src="./assets/img/logoamazingevents.png" alt="Logo" class="logo-img"></a>
-      <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="/upcoming_events.html" class="nav-link">Upcoming Events</a></li>
-        <li class="nav-item"><a href="/past_events.html" class="nav-link">Past Events</a></li>
-        <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="/stats.html" class="nav-link">Stats</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="container">
-    <div class="form">
-      <article class="checkbox-container" id="table_checks"></article>
-    </div>
-  </div>
-    
-
-  <div class="cards" id="card-conteiner"></div>
-
-  <footer class="footer-conteiner">
-    <div class="footer1">
-      <div class="footer-sociales">
-        <a href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-whatsapp "></i>
-        </a>
-      </div>
-      <div class="footer-cohort">
-        <p>FE05-TN</p>
-      </div>
-    </div>
-  </footer>
-
-<script src="/scripts/nav.js"></script>
-<script src="/scripts/eventlist.js"></script>
-<script src="/scripts/cardTemplate.js"></script>
-<script src="/scripts/eventscards.js"></script>
-<script src="/scripts/dinamicCategory.js"></script>
-<script src="/scripts/printcategories.js"></script>
-<script src="/scripts/checksCategories.js"></script>
-<script src="/scripts/templateNotFound.js"></script>
-
+    <header>
+        <div class="encabezado">
+            <h1>Amazing Events</h1>
+            <img class="logo" src="./assets/img/LogoAmazingEvents.png" alt="Logo AE">
+            <nav class="nav">
+                <a class="anc anc-activo" href="#">Home</a>
+                <a class="anc" href="./upcoming_events.html">Upcoming Events</a>
+                <a class="anc" href="./past_events.html">Past Events</a>
+                <a class="anc" href="./contact.html">Contact</a>
+                <a class="anc" href="./stats.html">Stats</a>
+            </nav>
+        </div>
+        <div class="barra">
+            <div class="flecha">
+                <a href="./stats.html"><img class="selector" src="./Recursos/anterior.png" alt="anterior"></a>
+            </div>
+            <h2 id="pagina-activa">Home</h2>
+            <div class="flecha">
+                <a href="./upcoming.html"><img class="selector" src="./Recursos/posterior.png" alt="posterior"></a>
+            </div>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="checks">
+            <div class="checks" id="table-checks"></div>
+        </div>
+        <div class="eventos">
+            <div class="eventos" id="card-container"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="bloque-redes">
+            <a class= "redes" href="index.html"><img class="red" src="./Recursos/instagram.png" alt="Seguinos en instagram">#</a>
+            <a class= "redes" href="index.html"><img class="red" src="./Recursos/facebook.png" alt="Miranos en Facebook"></a>
+            <a class= "redes" href="index.html"><img class="red" src="./Recursos/WhatsApp.jpg" alt="Contactanos por WhatsApp"></a>
+        </div>
+        <h3>FE05-TN</h3>
+    </footer>
+    <script src="./scripts/template.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/checks.js"></script>
 </body>
 </html>
